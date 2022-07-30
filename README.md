@@ -14,6 +14,12 @@
 [https://github.com/taccisum/swagger-doc-snippets/releases](https://github.com/taccisum/swagger-doc-snippets/releases)
 手动安装。
 
+# 新增
+    1.支持host填写 swaggerdoc.host
+    2.描述支持括号
+    3.@Response 支持基础类型integer/string/boolean/number，数组array和同Request中body位置的参数类型。
+    ```200 arrayarraystring (resp) eg:([['a', 'b' ]])```
+
 ## Install
 
 ```bash
@@ -35,6 +41,7 @@ exports.swaggerdoc = {
 ```js
 // {app_root}/config/config.default.js
 exports.swaggerdoc = {
+  host: '',
   dirScanner: './app/controller',
   apiInfo: {
     title: 'egg-swagger',

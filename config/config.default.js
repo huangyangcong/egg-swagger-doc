@@ -26,7 +26,7 @@ exports.swaggerdoc = {
   schemes: ['http', 'https'],
   consumes: ['application/json'],
   produces: ['application/json'],
-  securityDefinitions: {
+  // securityDefinitions: {
     // apikey: {
     //   type: 'apiKey',
     //   name: 'clientkey',
@@ -41,7 +41,7 @@ exports.swaggerdoc = {
     //     'read:access_token': 'read access_token',
     //   },
     // },
-  },
+  // },
   enableSecurity: false,
   // enableValidate: true,
   routerMap: false,
